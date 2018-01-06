@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+    <h1><strong>Price Tracker Service</strong></h1>
+    <p>We track online stores to alert you of price drops in items that interest you.</p>
+    <p>Sign up today, and get started by adding the URL of an item you want to track!</p>
+    <p><a class="btn btn-success btn-lg" href="{{ url_for('users.register_user') }}" role="button">Sign up</a></p>
+</div>
+<div class="row">
+          <div class="col-md-4">
+            <h2>Stores</h2>
+            <p>Go to Stores page to set up stores that you want to track! </p>
+            <p><a class="btn btn-default" href="{{ url_for('stores.index') }}" role="button">Stores »</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Your Alerts</h2>
+            <p>After you sign up, go to Your Alerts page to create alerts for products that you want to track! </p>
+            <p><a class="btn btn-default" href="{{ url_for('users.user_alerts') }}" role="button">Your Alerts »</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2></h2>
+            <p></p>
+          </div>
+        </div>
+
+
+{% endblock %}
